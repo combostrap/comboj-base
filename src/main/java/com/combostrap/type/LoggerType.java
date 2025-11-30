@@ -1,11 +1,11 @@
 package com.combostrap.type;
 
 
-import net.bytle.log.Log;
-import net.bytle.log.Logs;
+import java.util.logging.Logger;
 
 public class LoggerType {
 
-  protected static final Log LOGGER = Logs.createFromClazz(LoggerType.class);
+    protected static final Logger LOGGER = Logger.getLogger(LoggerType.class.getName());
+    ;
 
 }

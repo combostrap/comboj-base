@@ -52,7 +52,7 @@ public class StringsTest {
   @Test
   public void fromPath() {
     int lineCount = Strings.createFromPath(Paths.get("./src/test/resources/type/Strings.txt")).getLineCount();
-    Assert.assertEquals(5, lineCount);
+    Assert.assertEquals(6, lineCount);
   }
 
   @Test

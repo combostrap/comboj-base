@@ -1,6 +1,5 @@
-package com.combostrap.regexp;
+package com.combostrap.glob;
 
-import com.combostrap.glob.Glob;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
