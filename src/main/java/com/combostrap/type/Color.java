@@ -4,6 +4,9 @@ import com.combostrap.exception.InternalException;
 
 import java.util.regex.Pattern;
 
+/**
+ * A class that encapsulate a color string
+ */
 public class Color {
 
 

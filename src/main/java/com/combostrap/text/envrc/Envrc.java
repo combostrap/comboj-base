@@ -17,7 +17,7 @@ import java.util.concurrent.TimeoutException;
  * Execute an envrc file and returns the environment
  * <p>
  * Example:
- * <code>
+ * <pre>{@code
  * Map<String, String> env = Envrc.exec(
  * Paths.get(".envrc"),
  * Map.of("PASSWORD_STORE_DIR", "/home/user/store/dir")
@@ -25,7 +25,7 @@ import java.util.concurrent.TimeoutException;
  * for (Map.Entry<String, String> entry : env.entrySet()) {
  * System.out.println(entry.getKey() + ":" + entry.getValue());
  * }
- * </code>
+ * }</pre>
  */
 public class Envrc {
 
