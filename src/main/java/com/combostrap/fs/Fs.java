@@ -861,9 +861,13 @@ public class Fs {
      */
     public static Path getPathFromResources(Class<?> clazz, String path) {
         try {
-            URL resource = Objects.requireNonNull(clazz.getResource(path));
-            return Paths.get(resource
-                    .toURI());
+            URL clazzResource = clazz.getResource(path);
+            if (clazzResource == null) {
+                // verify that they are in the resource directory
+                // that in your IDE, the path is marked as resource root
+                throw new RuntimeException("Resource not found: " + path);
+            }
+            return Paths.get(clazzResource.toURI());
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
